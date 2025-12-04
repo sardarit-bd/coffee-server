@@ -30,7 +30,7 @@ The API uses a small model + custom dataset to generate accurate pairings with r
 }
 ```
 ## End point
-POST /api/pairing
-Content-Type: application/json
+ - POST https://coffee-server-orcin.vercel.app/api/pairing
+
 
 ![Coffee Sample](./images/coffee.png)
