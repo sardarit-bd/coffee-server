@@ -79,7 +79,10 @@ ONLY respond in JSON using this structure:
   }
 });
 
-// const PORT = 5000;
-// app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
-export default app
+if(process.env.ENVAIRONMENT == 'development'){
+const PORT = 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+}
+
+export default app;
