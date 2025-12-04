@@ -24,6 +24,10 @@ function formatPastries(pastries) {
   return pastries.map(p => `${p.name} (${p.flavors.join(", ")})`).join(", ");
 }
 
+app.get("/", (req, res) => {
+  res.send("Coffee-Pastry Pairing API is running.");
+});
+
 app.post("/api/pairing", async (req, res) => {
   try {
     const { prompt } = req.body;
