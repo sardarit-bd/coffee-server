@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Sweetspot Standard",
+    "type": "Espresso",
+    "tastingNotes": ["caramel", "chocolate", "balanced body"],
+    "origin": "Colombia",
+    "roast": "Medium"
+  },
+  {
+    "name": "Bluebird Kenya washed Mamuto AA",
+    "type": "Filter",
+    "tastingNotes": ["red currants", "cherry"],
+    "origin": "Kenya",
+    "roast": "Light"
+  }
+]

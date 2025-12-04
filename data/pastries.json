@@ -1,0 +1,8 @@
+[
+  { "name": "Banana Bread", "flavors": ["banana", "sweet", "nutty"] },
+  { "name": "Croissant", "flavors": ["buttery", "flaky"] },
+  { "name": "Franzbrötchen", "flavors": ["caramel", "cinnamon"] },
+  { "name": "Pain au Chocolat", "flavors": ["chocolate", "buttery"] },
+  { "name": "Zimtknoten", "flavors": ["cinnamon", "sweet"] },
+  { "name": "Kardamomknoten", "flavors": ["cardamom", "spicy", "sweet"] }
+]
