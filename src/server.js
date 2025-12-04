@@ -3,6 +3,8 @@ import cors from "cors";
 import fs from "fs";
 import dotenv from "dotenv";
 import OpenAI from "openai";
+import path from "path";
+import { fileURLToPath } from "url";
 
 dotenv.config();
 
@@ -15,9 +17,20 @@ app.use(cors({
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
+// convert import.meta.url to __dirname
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+
+// get path relative to this file
+const coffeesPath = path.join(__dirname, "../data/coffees.json");
+const pastriesPath = path.join(__dirname, "../data/pastries.json");
+
+
 // Load data
-const coffees = JSON.parse(fs.readFileSync("./data/coffees.json", "utf8"));
-const pastries = JSON.parse(fs.readFileSync("./data/pastries.json", "utf8"));
+const coffees = JSON.parse(fs.readFileSync(coffeesPath, "utf8"));
+const pastries = JSON.parse(fs.readFileSync(pastriesPath, "utf8"));
+
 
 // Helper to format pastries for AI
 function formatPastries(pastries) {
