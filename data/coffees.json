@@ -9,8 +9,29 @@
   {
     "name": "Bluebird Kenya washed Mamuto AA",
     "type": "Filter",
-    "tastingNotes": ["red currants", "cherry"],
+    "tastingNotes": ["red currants", "cherry", "bright acidity"],
     "origin": "Kenya",
     "roast": "Light"
+  },
+  {
+    "name": "Morning Blend",
+    "type": "Espresso",
+    "tastingNotes": ["toffee", "nutty", "smooth"],
+    "origin": "Brazil",
+    "roast": "Medium-Dark"
+  },
+  {
+    "name": "Ethiopian Yirgacheffe",
+    "type": "Filter",
+    "tastingNotes": ["jasmine", "lemon", "floral"],
+    "origin": "Ethiopia",
+    "roast": "Light"
+  },
+  {
+    "name": "Dark Roast House",
+    "type": "Espresso",
+    "tastingNotes": ["dark chocolate", "smoky", "bold"],
+    "origin": "Sumatra",
+    "roast": "Dark"
   }
 ]
