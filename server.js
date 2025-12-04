@@ -9,6 +9,9 @@ dotenv.config();
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use(cors({
+    origin: ['https://coffee-mocha-chi.vercel.app']
+}))
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
@@ -76,5 +79,7 @@ ONLY respond in JSON using this structure:
   }
 });
 
-const PORT = 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+// const PORT = 5000;
+// app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+export default app
